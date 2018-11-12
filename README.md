@@ -46,7 +46,7 @@ GROUP BY DATE(time)
 ORDER BY total DESC;
 ```
 
-# The Output:
+# The Output
 The most popular three articles of all time:
 <br /> "candidate-is-jerk"  - 338647 views
 <br /> "bears-love-berries"  - 253801 views
