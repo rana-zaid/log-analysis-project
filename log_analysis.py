@@ -15,6 +15,7 @@ def db_connect(query):
     db.close()
     return result
 
+
 def get_top_articles():
     """Return the most popular three articles of all time"""
     popular_articles_sql = """
