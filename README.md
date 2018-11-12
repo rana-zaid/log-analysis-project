@@ -21,7 +21,8 @@ The purpose is creating an internal reporting tool that answers the following qu
 <br />6. cd log-analysis-project. 
  
 2. Download	and	Load	the	Data:
-* Download	“newsdata.sql” by	clicking	on	the	following	link: https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdat a.zip	
+* Download	“newsdata.sql” by	clicking	on	the	following	link: 
+https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip
 * Move	the	“newsdata.sql”	to the project	folder	“log-analysis-project”	
 * Load	the	data	from	the	“newsdata.sql”	by	using	the	following	command:<br /> psql -d news -f newsdata.sql 
 * Note	that	we	are	using	PostgreSQL	for	this	projec.
