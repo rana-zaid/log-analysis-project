@@ -33,17 +33,17 @@ The purpose is creating an internal reporting tool that answers the following qu
 3. Run python loganalysisdb.py
 # Create Views
 ```
-CREATE VIEW subtotalview as Select date(time),count(*) as subtotal 
-from log 
-where status='404 NOT FOUND' 
-group by DATE(time) 
-order by subtotal desc;
+CREATE VIEW subtotalview AS SELECT DATE(time),COUNT(*) AS subtotal 
+FROM log 
+WHERE status='404 NOT FOUND' 
+GROUP BY DATE(time) 
+ORDER BY subtotal DESC;
 ```
 ```
-CREATE VIEW totalview as Select date(time), count(*) as total
-from log 
-group by date(time) 
-order by total desc;
+CREATE VIEW totalview AS SELECT DATE(time), COUNT(*) AS total
+FROM log 
+GROUP BY DATE(time) 
+ORDER BY total DESC;
 ```
 
 # The Output:
