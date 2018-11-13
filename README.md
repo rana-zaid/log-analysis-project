@@ -36,18 +36,18 @@ https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsd
 # Create Views
 * Total Requests:
 ```sql
+CREATE VIEW totalview AS SELECT DATE(time), COUNT(*) AS total
+FROM log 
+GROUP BY DATE(time) 
+ORDER BY total DESC;
+```
+* Error Requests:
+```sql
 CREATE VIEW subtotalview AS SELECT DATE(time),COUNT(*) AS subtotal 
 FROM log 
 WHERE status='404 NOT FOUND' 
 GROUP BY DATE(time) 
 ORDER BY subtotal DESC;
-```
-* Error Requests:
-```sql
-CREATE VIEW totalview AS SELECT DATE(time), COUNT(*) AS total
-FROM log 
-GROUP BY DATE(time) 
-ORDER BY total DESC;
 ```
 
 # The Output
