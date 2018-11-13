@@ -19,10 +19,10 @@ def db_connect(query):
 def get_top_articles():
     """Return the most popular three articles of all time"""
     popular_articles_sql = """
-        SELECT slug AS article, COUNT(*) AS views
+        SELECT title, COUNT(*) AS views
         FROM articles,log
-        WHERE slug = SUBSTRING(path,10)
-        GROUP BY slug
+        WHERE log.path = concat('/article/',articles.slug)
+        GROUP BY title
         ORDER BY views DESC
         LIMIT 3
         """
@@ -30,7 +30,7 @@ def get_top_articles():
     print("\nThe most popular three articles of all time:")
     for (slug, views) in result:
         print(' "{}"'.format(slug)),
-        print(" - {} views".format(views))
+        print("- {} views".format(views))
 
 
 def get_top_authors():
