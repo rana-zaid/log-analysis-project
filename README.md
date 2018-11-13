@@ -25,9 +25,9 @@ __2. Download	and	Load	the	Data:__
 * Download	“newsdata.sql” by	clicking	on	the	following	link: 
 https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip
 * Move	the	“newsdata.sql”	to the project	folder	“log-analysis-project”	
-* Load	the	data	from	the	“newsdata.sql”	by	using	the	following	command:<br /> psql -d news -f newsdata.sql 
+* Load	the	data	from	the	“newsdata.sql”	by	using	the	following	command:<br /> ```psql -d news -f newsdata.sql```
 * Note	that	we	are	using	PostgreSQL	for	this	projec.
-* Once	you	have	the	data	loaded	into	database,	connect	to	it	using:<br /> psql -d news
+* Once	you	have	the	data	loaded	into	database,	connect	to	it	using:<br /> ```psql -d news```
 
 # Run The Project
 1. Make sure that you have vagrant up and connected to it.
