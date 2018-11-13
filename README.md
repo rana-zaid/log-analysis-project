@@ -8,7 +8,7 @@ The purpose is creating an internal reporting tool that answers the following qu
 3. On which days did more than 1% of requests lead to errors?
 
 # Prerequisites
-1. Start	with	Software	Installation:
+__1. Start	with	Software	Installation:__
 * Vagrant:	https://www.vagrantup.com/downloads.html	
 * Virtual	Machine:	https://www.virtualbox.org/wiki/Downloads	
 * Download	a	FSND	virtual	machine:	https://github.com/udacity/fullstack-nanodegree-vm	
@@ -21,7 +21,7 @@ The purpose is creating an internal reporting tool that answers the following qu
 <br />5. mkdir log-analysis-project.
 <br />6. cd log-analysis-project. 
  
-2. Download	and	Load	the	Data:
+__2. Download	and	Load	the	Data:__
 * Download	“newsdata.sql” by	clicking	on	the	following	link: 
 https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip
 * Move	the	“newsdata.sql”	to the project	folder	“log-analysis-project”	
