@@ -49,9 +49,9 @@ ORDER BY total DESC;
 
 # The Output
 The most popular three articles of all time:
-<br /> "candidate-is-jerk"  - 338647 views
-<br /> "bears-love-berries"  - 253801 views
-<br /> "bad-things-gone"  - 170098 views
+<br /> "Candidate is jerk, alleges rival" - 338647 views
+<br /> "Bears love berries, alleges bear" - 253801 views
+<br /> "Bad things gone, say good people" - 170098 views
 <br />
 <br />The most popular article authors of all time:
 <br /> Ursula La Multa - 507594 views
