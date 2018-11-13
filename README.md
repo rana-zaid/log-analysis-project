@@ -31,7 +31,7 @@ https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsd
 
 # Run The Project
 1. Make sure that you have vagrant up and connected to it.
-2. cd into the correct project directory: cd /vagrant/log_analysis
+2. cd into the correct project directory: cd /vagrant/log-analysis-project
 3. Run python loganalysisdb.py
 # Create Views
 * Total Requests:
