@@ -13,7 +13,6 @@ The purpose is creating an internal reporting tool that answers the following qu
 * Virtual	Machine:	https://www.virtualbox.org/wiki/Downloads	
 * Download	a	FSND	virtual	machine:	https://github.com/udacity/fullstack-nanodegree-vm	
 <br /> __Note:__ You	will	also	need	a	Unix-style	terminal	program.	On	Mac	or	Linux	systems,	you	can	use	the	built-in	Terminal.	On	Windows, Git	Bash is recommended,	which	is	installed	with	the	Git	version	control	software.	
-<br />
 <br />Once	you	get	the	above	software	installed,	follow	the	following	instructions:	
 <br />1. cd vagrant.
 <br />2. vagrant up.
