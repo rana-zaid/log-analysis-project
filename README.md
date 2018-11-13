@@ -34,7 +34,7 @@ https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsd
 2. cd into the correct project directory: cd /vagrant/log_analysis
 3. Run python loganalysisdb.py
 # Create Views
-* Total Views:
+* Total Requests:
 ```sql
 CREATE VIEW subtotalview AS SELECT DATE(time),COUNT(*) AS subtotal 
 FROM log 
@@ -42,7 +42,7 @@ WHERE status='404 NOT FOUND'
 GROUP BY DATE(time) 
 ORDER BY subtotal DESC;
 ```
-* Error Views:
+* Error Requests:
 ```sql
 CREATE VIEW totalview AS SELECT DATE(time), COUNT(*) AS total
 FROM log 
