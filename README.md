@@ -12,6 +12,9 @@ The purpose is creating an internal reporting tool that answers the following qu
 * Vagrant:	https://www.vagrantup.com/downloads.html	
 * Virtual	Machine:	https://www.virtualbox.org/wiki/Downloads	
 * Download	a	FSND	virtual	machine:	https://github.com/udacity/fullstack-nanodegree-vm	
+<br />
+**Note:** You	will	also	need	a	Unix-style	terminal	program.	On	Mac	or	Linux	systems,	you	can	use	the	built-in	Terminal.	On	Windows, Git	Bash is recommended,	which	is	installed	with	the	Git	version	control	software.	
+<br />
 <br />Once	you	get	the	above	software	installed,	follow	the	following	instructions:	
 <br />1. cd vagrant.
 <br />2. vagrant up.
@@ -33,14 +36,14 @@ https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsd
 2. cd into the correct project directory: cd /vagrant/log_analysis
 3. Run python loganalysisdb.py
 # Create Views
-```
+```sql
 CREATE VIEW subtotalview AS SELECT DATE(time),COUNT(*) AS subtotal 
 FROM log 
 WHERE status='404 NOT FOUND' 
 GROUP BY DATE(time) 
 ORDER BY subtotal DESC;
 ```
-```
+```sql
 CREATE VIEW totalview AS SELECT DATE(time), COUNT(*) AS total
 FROM log 
 GROUP BY DATE(time) 
