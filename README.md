@@ -42,7 +42,7 @@ WHERE status='404 NOT FOUND'
 GROUP BY DATE(time) 
 ORDER BY subtotal DESC;
 ```
-*Error Views:
+* Error Views:
 ```sql
 CREATE VIEW totalview AS SELECT DATE(time), COUNT(*) AS total
 FROM log 
