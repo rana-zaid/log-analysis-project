@@ -1,4 +1,4 @@
-# Python 3.7.0
+#! /usr/bin/env python3
 # Database code for the DB news.
 
 import psycopg2
@@ -8,12 +8,15 @@ DBNAME = "news"
 
 def db_connect(query):
     """connect code and database, fetch data and execute the SQL statements"""
-    db = psycopg2.connect(database=DBNAME)
-    c = db.cursor()
-    c.execute(query)
-    result = c.fetchall()
-    db.close()
-    return result
+    try:
+        db = psycopg2.connect(database=DBNAME)
+        c = db.cursor()
+        c.execute(query)
+        result = c.fetchall()
+        db.close()
+        return result
+    except psycopg2.DatabaseError, e:
+        print("Unable to connect to the database")
 
 
 def get_top_articles():
@@ -65,6 +68,7 @@ def get_requests_error():
               'errors'.format(date.strftime('%B %d, %Y'), percentage))
 
 
-get_top_articles()
-get_top_authors()
-get_requests_error()
+if __name__ == "__main__":
+    get_top_articles()
+    get_top_authors()
+    get_requests_error()
